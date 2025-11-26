@@ -1,0 +1,87 @@
+# --------------------------------------------------
+# Node.js
+# --------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# --------------------------------------------------
+# Build output (TypeScript)
+# --------------------------------------------------
+dist/
+build/
+*.tsbuildinfo
+
+# --------------------------------------------------
+# Environment variables (mai committare!)
+# --------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# --------------------------------------------------
+# Logs
+# --------------------------------------------------
+logs/
+*.log
+*.log.*
+tmp/
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# --------------------------------------------------
+# Docker
+# --------------------------------------------------
+# ignore local development containers & artifacts
+docker-compose.override.yml
+docker-compose.dev.yml
+docker-compose.local.yml
+
+# Docker volumes and internal folders
+.docker/
+Dockerfile~
+docker-volume*/
+docker-data*/
+
+# --------------------------------------------------
+# OS generated files
+# --------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# --------------------------------------------------
+# Editor specific
+# --------------------------------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# JetBrains
+*.iml
+*.iws
+out/
+
+# --------------------------------------------------
+# Coverage / Testing
+# --------------------------------------------------
+coverage/
+*.lcov
+.nyc_output/
+
+# --------------------------------------------------
+# Misc
+# --------------------------------------------------
+*.swp
+*.swm
+*.sw?
+*.orig
+*.rej
