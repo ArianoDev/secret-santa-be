@@ -1,0 +1,14 @@
+.git
+.env
+.env.*
+node_modules
+dist
+build
+coverage
+*.log
+.DS_Store
+.vscode
+.idea
+docker-compose*.yml
+docker-data*
+docker-volume*
