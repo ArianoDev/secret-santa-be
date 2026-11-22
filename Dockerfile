@@ -3,7 +3,8 @@ FROM node:22-alpine AS build
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm ci
+# TypeScript is required to build even when NODE_ENV is production.
+RUN npm ci --include=dev
 
 COPY tsconfig.json ./
 COPY src ./src
